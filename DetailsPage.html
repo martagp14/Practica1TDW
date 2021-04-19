@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Ver Detalles</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./code.js"></script>
+</head>
+<body onload="InicializateDetailsPage();">
+    <header>
+        <h1>Anales de la ciencia</h1>
+    </header>
+    <div id="LoginBar">
+        <form>
+            <div id="LogIn" class="loggedOut">
+                <p>
+                    <label>Usuario:</label>
+                    <input id="user" type="text" autocomplete="Sin Nombre" />
+                    <label>Contraseña:</label>
+                    <input id="password" type="password" autocomplete="Sin contraseña" />
+                    <button id="B_Entrar" type="button" onclick="UserLogin();">Entrar</button>
+                </p>
+            </div>
+            <div id="LogOut" class="logged">
+                <button id="B_Salir" type="button" onclick="UserLogin();">Salir</button>
+            </div>
+        </form>
+        <a id="GotoIndex" href="./pag0.html">&lt;-- ÍNDICE</a>
+    </div>
+    <br />
+    <main>
+        <div id="Details">
+            <h3 id="Name">Producto</h3>
+            <image id="Image" src="" alt="No hay imagen disponible"></image>
+            <p id="FechaIni">Fecha Inicio: </p>
+            <p id="FechaFin">Fecha Fin: </p>
+            <p><a id="Wiki" href="" target="_blank">Wiki</a></p>
+            <table id="Participantes">
+                <tr>
+                    <th class="ParticipanPersonas">Personas participantes</th>
+                    <th class="ParticipanEntidades">Entidades participantes</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul id="list_people" class="ParticipanPersonas">
+                        </ul>
+                    </td>
+                    <td>
+                        <ul id="list_entities" class="ParticipanEntidades">
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="DetailsForm" class="logged">
+            <h3 id="DetailsFormTitle">Detalles</h3>
+            <form onsubmit="SaveNewObject();">
+                <label id="LabelName" for="NameForm">Nombre del producto: </label>
+                <input id="NameForm" type="text" autocomplete="" />
+                <br />
+                <label id="LabelFechaIni" for="FechaIniForm">Fecha Inicio: </label>
+                <input id="FechaIniForm" type="text" autocomplete="" />
+                <br />
+                <label id="LabelFechaFin" for="FechaFinForm">Fecha Fin: </label>
+                <input id="FechaFinForm" type="text" autocomplete="" />
+                <br />
+                <label for="ImageForm">Imagen: </label>
+                <input id="ImageForm" type="url" autocomplete="" />
+                <br />
+                <label for="WikiForm">Wiki: </label>
+                <input id="WikiForm" type="url" autocomplete="" />
+                <br />
+                <div id="ParticipantesForm">
+                    <div id="ParticipantesPersonasForm">
+                        <label for="ParticipanPersonas">Personas Participantes</label>
+                        <select id="ParticipanPersonas" multiple>
+                        </select>
+                    </div>
+                    <div id="ParticipantesEntidadesForm">
+                        <label for="ParticipanEntidades">Entidades Participantes</label>
+                        <select id="ParticipanEntidades" multiple>
+                        </select>
+                    </div>
+                </div>
+                <br />
+                <button id="B_Save" type="submit">Guardar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

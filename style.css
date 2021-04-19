@@ -1,0 +1,143 @@
+﻿body {
+    background: darkslategrey;
+    color: aquamarine;
+    text-align:center;
+    font-family: 'Consolas';
+}
+
+#LoginBar {
+    border-style: solid;
+    border-width: 2px;
+    border-color: aquamarine;
+    padding: 10px;
+}
+
+#LoginBar input {
+    width: 20%
+}
+
+#LogOut {
+    display: block;
+    margin: 10px;
+}
+
+#GotoIndex {
+    display:block;
+    margin: 10px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+#GotoIndex:hover{
+    color:darkorange;
+}
+
+#GotoIndex:active {
+    color: aquamarine;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+a:hover{
+    color: orange;
+}
+
+table {
+    border: none;
+}
+
+th, td {
+    color: black;
+    width: 30%;
+    column-width: 600px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center
+}
+
+th {
+    color: aquamarine;
+    border-bottom: 2px solid aquamarine;
+}
+
+td {
+    vertical-align:top;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center
+}
+
+li {
+    background-color: aquamarine;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 95%;
+    margin: 3px;
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li * {
+    margin: 5px;
+}
+
+.modify {
+    background-image: url(https://image.flaticon.com/icons/png/512/104/104668.png);
+    background-size: 15px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+}
+
+.trash {
+    background-image: url(https://image.flaticon.com/icons/png/512/18/18297.png);
+    background-size: 15px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+#Image{
+    width:20%;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+#Wiki {
+    color: aquamarine;
+    border: 1px solid aquamarine;
+    padding: 4px;
+}
+
+#Wiki:hover{
+    color:darkorange;
+    border-color: darkorange;
+}
+
+#DetailsForm input{
+    width:60%;
+}
+
+#DetailsForm select {
+    width: 25%;
+}

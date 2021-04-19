@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Indice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./code.js"></script>
+</head>
+<body onload="InicializatePage0();">
+    <header>
+        <h1>Anales de la ciencia</h1>
+    </header>
+    <div id="LoginBar">
+        <form>
+            <div id="LogIn" class="loggedOut">
+                <p>
+                    <label>Usuario:</label>
+                    <input id="user" type="text" autocomplete="Sin Nombre" />
+                    <label>Contraseña:</label>
+                    <input id="password" type="password" autocomplete="Sin contraseña" />
+                    <button id="B_Entrar" type="button" onclick="UserLogin();">Entrar</button>
+                </p>
+            </div>
+            <div id="LogOut" class="logged">
+                <button id="B_Salir" type="button" onclick="UserLogin();">Salir</button>
+            </div>
+        </form>
+    </div>
+    <br />
+    <main>
+        <div>
+            <table>
+                <tr>
+                    <th>Productos</th>
+                    <th>Personas</th>
+                    <th>Entidades</th>
+                </tr>
+                <tr>
+                    <td><button class="logged" onclick="CreateNewObject('product')">Nuevo</button></td>
+                    <td><button class="logged" onclick="CreateNewObject('person')">Nuevo</button></td>
+                    <td><button class="logged" onclick="CreateNewObject('entity')">Nuevo</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul id="list_products">
+                        </ul>
+                    </td>
+                    <td>
+                        <ul id="list_people">
+                        </ul>
+                    </td>
+                    <td>
+                        <ul id="list_entities">
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
